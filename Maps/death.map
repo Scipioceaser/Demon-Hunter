@@ -1,0 +1,233 @@
+// Game: Gameboy FPS
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_def" "builtin:EnemiesAndProps.fgd"
+"_tb_textures" "textures/walls"
+// brush 0
+{
+( -64 -128 -16 ) ( -64 -126 -16 ) ( -64 -128 -15 ) walls/portal 0 0 0 2 1
+( -128 -64 -16 ) ( -128 -64 -15 ) ( -126 -64 -16 ) walls/portal 0 0 0 2 1
+( -128 -128 0 ) ( -126 -128 0 ) ( -128 -126 0 ) walls/portal 0 0 0 2 2
+( 128 128 16 ) ( 128 130 16 ) ( 130 128 16 ) walls/portal 0 0 0 2 2
+( 128 64 16 ) ( 130 64 16 ) ( 128 64 17 ) walls/portal 0 0 0 2 1
+( 64 128 16 ) ( 64 128 17 ) ( 64 130 16 ) walls/portal 0 0 0 2 1
+}
+// brush 1
+{
+( -64 -128 80 ) ( -64 -128 0 ) ( -64 -64 0 ) walls/rocks 0 0 0 2 1
+( 64 -192 0 ) ( -64 -192 0 ) ( -64 -192 80 ) walls/rocks 0 0 0 2 1
+( -64 -64 0 ) ( -64 -128 0 ) ( 64 -128 0 ) walls/rocks 0 0 0 2 2
+( 64 -64 16 ) ( 64 -128 80 ) ( -64 -128 80 ) walls/rocks 0 0 0 2 2
+( 64 -64 0 ) ( 64 -64 16 ) ( -64 -64 16 ) walls/rocks 0 0 0 2 1
+( 64 -64 0 ) ( 64 -128 0 ) ( 64 -128 80 ) walls/rocks 0 0 0 2 1
+}
+// brush 2
+{
+( -64 128 80 ) ( -64 64 0 ) ( -64 128 0 ) walls/rocks 0 0 180 2 -1
+( 64 64 0 ) ( -64 64 16 ) ( 64 64 16 ) walls/rocks 0 0 0 2 1
+( 64 64 16 ) ( -64 128 80 ) ( 64 128 80 ) walls/rocks 0 0 0 2 -2
+( -64 64 0 ) ( 64 128 0 ) ( -64 128 0 ) walls/rocks 0 0 0 2 -2
+( 64 192 0 ) ( -64 192 80 ) ( -64 192 0 ) walls/rocks 0 0 0 2 1
+( 64 64 0 ) ( 64 128 80 ) ( 64 128 0 ) walls/rocks 0 0 180 2 -1
+}
+// brush 3
+{
+( 64 -64 0 ) ( 64 64 16 ) ( 64 -64 16 ) walls/rocks 0 0 180 2 -1
+( 64 -64 16 ) ( 128 64 80 ) ( 128 -64 80 ) walls/rocks 0 0 270 2 -2
+( 64 -64 0 ) ( 128 -64 80 ) ( 128 -64 0 ) walls/rocks 0 0 180 2 -1
+( 64 64 0 ) ( 128 -64 0 ) ( 128 64 0 ) walls/rocks 0 0 270 2 -2
+( 128 64 80 ) ( 64 64 0 ) ( 128 64 0 ) walls/rocks 0 0 180 2 -1
+( 192 -64 0 ) ( 192 64 80 ) ( 192 64 0 ) walls/rocks 0 0 180 2 -1
+}
+// brush 4
+{
+( -192 -64 0 ) ( -192 64 0 ) ( -192 64 80 ) walls/rocks 0 0 180 2 -1
+( -64 -64 0 ) ( -128 -64 0 ) ( -128 -64 80 ) walls/rocks 0 0 0 2 1
+( -64 64 0 ) ( -128 64 0 ) ( -128 -64 0 ) walls/rocks 0 0 270 2 2
+( -128 64 80 ) ( -128 64 0 ) ( -64 64 0 ) walls/rocks 0 0 0 2 1
+( -64 -64 16 ) ( -128 -64 80 ) ( -128 64 80 ) walls/rocks 0 0 270 2 2
+( -64 -64 0 ) ( -64 -64 16 ) ( -64 64 16 ) walls/rocks 0 0 180 2 -1
+}
+// brush 5
+{
+( -192 -192 0 ) ( -192 -64 0 ) ( -192 -64 144 ) walls/rocks 0 0 180 2 -1
+( -64 -192 144 ) ( -64 -192 0 ) ( -192 -192 0 ) walls/rocks 0 0 0 2 1
+( -64 -64 0 ) ( -192 -64 0 ) ( -192 -192 0 ) walls/rocks 0 0 270 2 2
+( -64 -192 144 ) ( -192 -192 144 ) ( -192 -64 144 ) walls/rocks 0 0 270 2 2
+( -192 -64 144 ) ( -192 -64 0 ) ( -64 -64 0 ) walls/rocks 0 0 0 2 1
+( -192 -64 144 ) ( -64 -64 16 ) ( -64 -192 144 ) walls/rocks 0 0 270 2 2
+( -64 -64 16 ) ( -64 -64 0 ) ( -64 -192 0 ) walls/rocks 0 0 180 2 -1
+}
+// brush 6
+{
+( 64 -64 16 ) ( 64 -192 0 ) ( 64 -64 0 ) walls/rocks 0 0 180 2 -1
+( 192 -64 144 ) ( 64 -192 144 ) ( 64 -64 16 ) walls/rocks 0 0 270 2 -2
+( 64 -192 144 ) ( 192 -192 0 ) ( 64 -192 0 ) walls/rocks 0 0 180 2 -1
+( 64 -64 0 ) ( 192 -192 0 ) ( 192 -64 0 ) walls/rocks 0 0 270 2 -2
+( 64 -192 144 ) ( 192 -64 144 ) ( 192 -192 144 ) walls/rocks 0 0 270 2 -2
+( 192 -64 144 ) ( 64 -64 0 ) ( 192 -64 0 ) walls/rocks 0 0 180 2 -1
+( 192 -192 0 ) ( 192 -64 144 ) ( 192 -64 0 ) walls/rocks 0 0 180 2 -1
+}
+// brush 7
+{
+( 64 64 16 ) ( 64 64 0 ) ( 64 192 0 ) walls/rocks 0 0 0 2 1
+( 192 64 144 ) ( 64 64 16 ) ( 64 192 144 ) walls/rocks 0 0 90 2 2
+( 192 64 144 ) ( 192 64 0 ) ( 64 64 0 ) walls/rocks 0 0 180 2 -1
+( 64 64 0 ) ( 192 64 0 ) ( 192 192 0 ) walls/rocks 0 0 90 2 2
+( 64 192 144 ) ( 192 192 144 ) ( 192 64 144 ) walls/rocks 0 -0.999992 90 2 2
+( 64 192 144 ) ( 64 192 0 ) ( 192 192 0 ) walls/rocks 0 0 180 2 -1
+( 192 192 0 ) ( 192 64 0 ) ( 192 64 144 ) walls/rocks 0 0 0 2 1
+}
+// brush 8
+{
+( -192 192 0 ) ( -192 64 144 ) ( -192 64 0 ) walls/rocks 0 0 0 2 1
+( -192 64 144 ) ( -64 64 0 ) ( -192 64 0 ) walls/rocks 0 0 0 2 1
+( -64 64 0 ) ( -192 192 0 ) ( -192 64 0 ) walls/rocks 0 0 90 2 -2
+( -64 192 144 ) ( -192 64 144 ) ( -192 192 144 ) walls/rocks 0 0 90 2 -2
+( -64 192 144 ) ( -192 192 0 ) ( -64 192 0 ) walls/rocks 0 0 0 2 1
+( -192 64 144 ) ( -64 192 144 ) ( -64 64 16 ) walls/rocks 0 0 90 2 -2
+( -64 64 16 ) ( -64 192 0 ) ( -64 64 0 ) walls/rocks 0 0 0 2 1
+}
+}
+// entity 1
+{
+"classname" "Player"
+"origin" "-8 8 24"
+}
+// entity 2
+{
+"classname" "Bomber"
+"origin" "-88 -120 152"
+}
+// entity 3
+{
+"classname" "Bomber"
+"origin" "-120 -40 152"
+}
+// entity 4
+{
+"classname" "Bomber"
+"origin" "-104 24 152"
+}
+// entity 5
+{
+"classname" "Bomber"
+"origin" "-72 88 152"
+}
+// entity 6
+{
+"classname" "Bomber"
+"origin" "-8 136 152"
+}
+// entity 7
+{
+"classname" "Bomber"
+"origin" "56 136 152"
+}
+// entity 8
+{
+"classname" "Bomber"
+"origin" "104 104 152"
+}
+// entity 9
+{
+"classname" "Bomber"
+"origin" "152 56 152"
+}
+// entity 10
+{
+"classname" "Bomber"
+"origin" "152 8 152"
+}
+// entity 11
+{
+"classname" "Bomber"
+"origin" "168 -40 152"
+}
+// entity 12
+{
+"classname" "Bomber"
+"origin" "136 -72 152"
+}
+// entity 13
+{
+"classname" "Bomber"
+"origin" "104 -104 152"
+}
+// entity 14
+{
+"classname" "Bomber"
+"origin" "56 -136 152"
+}
+// entity 15
+{
+"classname" "Bomber"
+"origin" "-8 -136 152"
+}
+// entity 16
+{
+"classname" "Bomber"
+"origin" "-56 -72 152"
+}
+// entity 17
+{
+"classname" "Bomber"
+"origin" "-136 -72 152"
+}
+// entity 18
+{
+"classname" "Bomber"
+"origin" "-56 -136 152"
+}
+// entity 19
+{
+"classname" "Bomber"
+"origin" "24 -152 152"
+}
+// entity 20
+{
+"classname" "Bomber"
+"origin" "88 -136 152"
+}
+// entity 21
+{
+"classname" "Bomber"
+"origin" "136 -104 152"
+}
+// entity 22
+{
+"classname" "Bomber"
+"origin" "152 -56 152"
+}
+// entity 23
+{
+"classname" "Bomber"
+"origin" "168 -24 152"
+}
+// entity 24
+{
+"classname" "Bomber"
+"origin" "168 8 152"
+}
+// entity 25
+{
+"classname" "Bomber"
+"origin" "136 56 152"
+}
+// entity 26
+{
+"classname" "Bomber"
+"origin" "72 88 152"
+}
+// entity 27
+{
+"classname" "Bomber"
+"origin" "-8 104 152"
+}
+// entity 28
+{
+"classname" "Bomber"
+"origin" "-8 104 152"
+}

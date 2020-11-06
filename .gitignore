@@ -1,0 +1,10 @@
+# Import cache
+.import/
+*.import
+addons/
+.mono/
+
+# Binaries
+bin/
+build/
+lib/

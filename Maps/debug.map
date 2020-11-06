@@ -1,0 +1,119 @@
+// Game: Gameboy FPS
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures/walls"
+"_tb_def" "builtin:EnemiesAndProps.fgd"
+// brush 0
+{
+( -192 -192 -16 ) ( -192 -189 -16 ) ( -192 -192 -15 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -192 -192 -15 ) ( -189 -192 -16 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -189 -192 -16 ) ( -192 -189 -16 ) walls/floor_simple 0 0 0 3 3
+( 192 192 16 ) ( 192 195 16 ) ( 195 192 16 ) walls/floor_simple 0 0 0 1 1
+( 192 192 16 ) ( 195 192 16 ) ( 192 192 17 ) walls/floor_simple 0 0 0 3 1
+( 192 192 16 ) ( 192 192 17 ) ( 192 195 16 ) walls/floor_simple 0 0 0 3 1
+}
+// brush 1
+{
+( -176 -160 16 ) ( -176 -159 16 ) ( -176 -160 17 ) walls/wall_simple 0 0 0 1 1
+( -176 -160 16 ) ( -176 -160 17 ) ( -175 -160 16 ) walls/wall_simple 0 0 0 1 1
+( -176 -160 16 ) ( -175 -160 16 ) ( -176 -159 16 ) walls/wall_simple 0 0 0 1 1
+( -112 -96 64 ) ( -112 -95 64 ) ( -111 -96 64 ) walls/wall_simple 0 0 0 1 1
+( -112 -96 32 ) ( -111 -96 32 ) ( -112 -96 33 ) walls/wall_simple 0 0 0 1 1
+( -112 -96 32 ) ( -112 -96 33 ) ( -112 -95 32 ) walls/wall_simple 0 0 0 1 1
+}
+// brush 2
+{
+( 96 16 16 ) ( 96 17 16 ) ( 96 16 17 ) walls/wall_simple 16 0 0 1 1
+( 112 16 16 ) ( 112 16 17 ) ( 113 16 16 ) walls/wall_simple -16 0 0 1 1
+( 112 16 16 ) ( 113 16 16 ) ( 112 17 16 ) walls/wall_simple -16 -16 0 1 1
+( 160 144 80 ) ( 160 145 80 ) ( 161 144 80 ) walls/wall_simple -16 -16 0 1 1
+( 160 144 32 ) ( 161 144 32 ) ( 160 144 33 ) walls/wall_simple -16 0 0 1 1
+( 160 144 32 ) ( 160 144 33 ) ( 160 145 32 ) walls/wall_simple 16 0 0 1 1
+}
+// brush 3
+{
+( 32 -144 16 ) ( 32 -143 16 ) ( 32 -144 17 ) walls/wall_simple 0 0 0 1 1
+( 32 -144 16 ) ( 32 -144 17 ) ( 33 -144 16 ) walls/wall_simple 0 0 0 1 1
+( 32 -144 16 ) ( 33 -144 16 ) ( 32 -143 16 ) walls/wall_simple 0 0 0 1 1
+( 144 -80 112 ) ( 144 -79 112 ) ( 145 -80 112 ) walls/wall_simple 0 0 0 1 1
+( 144 -80 32 ) ( 145 -80 32 ) ( 144 -80 33 ) walls/wall_simple 0 0 0 1 1
+( 144 -80 32 ) ( 144 -80 33 ) ( 144 -79 32 ) walls/wall_simple 0 0 0 1 1
+}
+// brush 4
+{
+( -160 32 16 ) ( -160 33 16 ) ( -160 32 17 ) walls/wall_simple 0 0 0 1 1
+( -160 32 16 ) ( -160 32 17 ) ( -159 32 16 ) walls/wall_simple 0 0 0 1 1
+( -160 32 16 ) ( -159 32 16 ) ( -160 33 16 ) walls/wall_simple 0 0 0 1 1
+( -80 144 80 ) ( -80 145 80 ) ( -79 144 80 ) walls/wall_simple 0 0 0 1 1
+( -80 144 32 ) ( -79 144 32 ) ( -80 144 33 ) walls/wall_simple 0 0 0 1 1
+( -80 144 32 ) ( -80 144 33 ) ( -80 145 32 ) walls/wall_simple 0 0 0 1 1
+}
+// brush 5
+{
+( -192 -192 -16 ) ( -192 -189 -16 ) ( -192 -192 -15 ) walls/floor_simple 0 0 0 3 1
+( -192 -208 -16 ) ( -192 -208 -15 ) ( -189 -208 -16 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -189 -192 -16 ) ( -192 -189 -16 ) walls/floor_simple 0 0 0 3 3
+( 192 192 32 ) ( 192 195 32 ) ( 195 192 32 ) walls/floor_simple 0 0 0 1 1
+( -192 -192 -16 ) ( -189 -192 -16 ) ( -192 -192 -15 ) walls/floor_simple 0 0 0 3 1
+( 192 192 16 ) ( 192 192 17 ) ( 192 195 16 ) walls/floor_simple 0 0 0 3 1
+}
+// brush 6
+{
+( -208 -192 -16 ) ( -208 -189 -16 ) ( -208 -192 -15 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -192 -192 -15 ) ( -189 -192 -16 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -189 -192 -16 ) ( -192 -189 -16 ) walls/floor_simple 0 0 0 3 3
+( 192 192 32 ) ( 192 195 32 ) ( 195 192 32 ) walls/floor_simple 0 0 0 1 1
+( 192 192 16 ) ( 195 192 16 ) ( 192 192 17 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -192 -192 -15 ) ( -192 -189 -16 ) walls/floor_simple 0 0 0 3 1
+}
+// brush 7
+{
+( -192 -192 -16 ) ( -192 -189 -16 ) ( -192 -192 -15 ) walls/floor_simple 0 0 0 3 1
+( 192 192 16 ) ( 192 192 17 ) ( 195 192 16 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -189 -192 -16 ) ( -192 -189 -16 ) walls/floor_simple 0 0 0 3 3
+( 192 192 32 ) ( 192 195 32 ) ( 195 192 32 ) walls/floor_simple 0 0 0 1 1
+( 192 208 16 ) ( 195 208 16 ) ( 192 208 17 ) walls/floor_simple 0 0 0 3 1
+( 192 192 16 ) ( 192 192 17 ) ( 192 195 16 ) walls/floor_simple 0 0 0 3 1
+}
+// brush 8
+{
+( 192 192 16 ) ( 192 195 16 ) ( 192 192 17 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -192 -192 -15 ) ( -189 -192 -16 ) walls/floor_simple 0 0 0 3 1
+( -192 -192 -16 ) ( -189 -192 -16 ) ( -192 -189 -16 ) walls/floor_simple 0 0 0 3 3
+( 192 192 32 ) ( 192 195 32 ) ( 195 192 32 ) walls/floor_simple 0 0 0 1 1
+( 192 192 16 ) ( 195 192 16 ) ( 192 192 17 ) walls/floor_simple 0 0 0 3 1
+( 208 192 16 ) ( 208 192 17 ) ( 208 195 16 ) walls/floor_simple 0 0 0 3 1
+}
+}
+// entity 1
+{
+"classname" "Cultist"
+"origin" "-136 -184 24"
+}
+// entity 2
+{
+"classname" "Ammo_Pistol"
+"origin" "-136 -72 24"
+}
+// entity 3
+{
+"classname" "Ammo_Rockets"
+"origin" "-136 -40 24"
+}
+// entity 4
+{
+"classname" "Ammo_Shotgun"
+"origin" "-136 8 24"
+}
+// entity 5
+{
+"classname" "Launcher"
+"origin" "56 -56 24"
+}
+// entity 6
+{
+"classname" "Shotgun"
+"origin" "56 -8 24"
+}
